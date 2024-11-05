@@ -21,11 +21,13 @@ public static GameManager singleton;
         } else if (singleton!=this){
             Destroy(gameObject);
         }
+
+        bestScore = PlayerPrefs.GetInt("HighScore");
     }
 
     public void NextLevel ()
     {
-
+        Debug.Log("Pasamos de nivel");
     }
     public void Restartlevel()
     {
@@ -40,6 +42,7 @@ public static GameManager singleton;
         if (currentScore>bestScore)
         {
          bestScore = currentScore;   
+         PlayerPrefs.SetInt("HighScore",currentScore);
         }
     }
 }
