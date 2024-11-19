@@ -27,6 +27,10 @@ public static GameManager singleton;
 
     public void NextLevel ()
     {
+
+        currentLevel++;
+        FindObjectOfType<BallController>().ResetBall();
+        FindObjectOfType<HelixController>().LoadStage(currentLevel);
         Debug.Log("Pasamos de nivel");
     }
     public void Restartlevel()
@@ -34,6 +38,8 @@ public static GameManager singleton;
         Debug.Log("Restart");
         singleton.currentScore=0;
         FindObjectOfType<BallController>().ResetBall();
+        FindObjectOfType<HelixController>().LoadStage(currentLevel);
+
     }
 
     public void AddScore(int scoreToAdd)
