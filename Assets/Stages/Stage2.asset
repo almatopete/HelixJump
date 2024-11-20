@@ -27,13 +27,13 @@ MonoBehaviour:
   - partCount: 9
     deathPartCount: 2
   - partCount: 3
-    deathPartCount: 1
+    deathPartCount: 3
   - partCount: 6
     deathPartCount: 2
   - partCount: 8
-    deathPartCount: 1
+    deathPartCount: 3
   - partCount: 9
-    deathPartCount: 5
+    deathPartCount: 4
   - partCount: 9
     deathPartCount: 2
   - partCount: 8
