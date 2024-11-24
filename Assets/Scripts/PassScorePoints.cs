@@ -8,5 +8,6 @@ public class PassScorePoints : MonoBehaviour
     
     {
         GameManager.singleton.AddScore(1);
+        FindObjectOfType<BallController>().perfectPass++;
     }
 }
